@@ -1,0 +1,90 @@
+.header{
+background:#fff  ;
+
+color:#000;
+padding:2px;
+text-align: center;
+font-size:18px;
+font-family:arial;
+font-weight:700;
+border:2px solid #fff;
+box-shadow:3px 3px 3px #ddd;
+}
+.fheader{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	padding:2px;
+	margin:1px;
+	flex-wrap:wrap; 
+}
+.fheader>div{
+  padding:2%;
+}
+.fcontent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:2px;
+	margin:1px;
+}
+.fcontent>div{
+	padding: 0.1%;
+}
+.fimage{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.fimage2{
+    display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+    }
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+
+    }
+    
+    .fimage{
+    width:100%;
+    height:auto;
+    }
+    .fimage2{
+    width:100%;
+    height:auto;
+    flex-wrap:wrap;
+    justify-content: center;
+    }
+    img{
+    	width: 100%;
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    [class*="col-"] {
+        width: 100%;
+
+    }
+    
+    .fimage{
+    width:100%;
+    height:auto;
+    }
+    img{
+    	width: 100%;
+    }
+
+}
+
+.col-1{width:100%;}
+.col-2{width:80%;}
+.col-3{width:10%;}
+[class*="col-"]{
+	float:left;
+}
+
+
+
